@@ -19,9 +19,6 @@ on:
     paths:
       - "sdks/typescript/**"
   workflow_dispatch:
-  schedule:
-    # Daily at midnight UTC, Monday-Saturday.
-    - cron: "0 0 * * 1-6"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
