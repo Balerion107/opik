@@ -1,8 +1,6 @@
 name: Sync Provider Models Daily
 
 on:
-  schedule:
-    - cron: '30 0 * * 1-5' # 30 min after model prices sync, Monday to Friday
   workflow_dispatch:
     inputs:
       force_regen:

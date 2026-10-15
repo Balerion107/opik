@@ -1,8 +1,6 @@
 name: Update Span Cost Daily
 
 on:
-  schedule:
-    - cron: '0 0 * * 1-5' # Runs at midnight UTC, Monday to Friday
   workflow_dispatch: # Allows manual trigger
 
 jobs:
