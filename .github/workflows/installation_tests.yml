@@ -1,8 +1,6 @@
 name: Installation Tests
 
 on:
-  schedule:
-    - cron: '0 12 * * *' # runs every day at noon UTC
   workflow_dispatch:
 
 jobs:
