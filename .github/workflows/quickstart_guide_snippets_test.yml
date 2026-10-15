@@ -7,8 +7,6 @@ env:
   ALLURE_PROJECT_ID: 1
   ALLURE_RESULTS: allure-results
 on:
-    schedule:
-    - cron: '0 12 * * *' # runs every day at noon UTC
     workflow_dispatch:
         inputs:
             ALLURE_JOB_RUN_ID:

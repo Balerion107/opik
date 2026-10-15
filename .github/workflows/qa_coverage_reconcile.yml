@@ -17,8 +17,6 @@ run-name: "QA Coverage Reconcile ${{ github.ref_name }}"
 # tag_lint.yml already gates tag validity there.
 
 on:
-  schedule:
-    - cron: '30 2 * * *'   # 02:30 UTC daily, after the nightly t3 suite settles
   workflow_dispatch:
   push:
     branches:
